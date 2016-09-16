@@ -36,7 +36,7 @@ object UploadData {
     import scala.io.Source
     import scala.collection.mutable.ListBuffer
     var lines = new ListBuffer[String]()
-    for(line <- Source.fromFile("").getLines()) {
+    for(line <- Source.fromFile(filePath).getLines()) {
       println(line)
       lines.+=(line)
     }
